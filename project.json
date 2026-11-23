@@ -1,0 +1,14 @@
+{
+  "number": 15,
+  "name": "EntityLinkIT",
+  "short": "IT entity linking",
+  "summary": "Resolve fictional asset names with explicit ambiguity and out-of-catalog abstention.",
+  "profile": "core",
+  "timeout": 600,
+  "scope": "Fictional IT asset catalog; lexical entity linking with explicit abstention. No learned model or production asset discovery.",
+  "skills": [
+    "Python",
+    "Data Processing",
+    "Software Testing"
+  ]
+}

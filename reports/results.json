@@ -1,0 +1,65 @@
+{
+  "project": "EntityLinkIT",
+  "number": 15,
+  "status": "local_run_passed",
+  "timestamp_utc": "2026-11-20T04:28:58Z",
+  "duration_seconds": 0.1269237995147705,
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "Pillow": "13.0.0"
+  },
+  "source_sha256": {
+    "common.py": "6824312bac56d81a071760617f624272948f76fcae8190f8168a8911c8f7e8b0",
+    "experiment.py": "799767b8f1cd0967717b9f1bcc4c3c1d4b489978d8e9ab61b6eabda75af28fc7",
+    "run.py": "f59c8f7399ab614d89f8a565b96f60875e75284d439fe5a38bd6837c730dfdbf"
+  },
+  "result": {
+    "cases": [
+      {
+        "query": "gateway-east",
+        "expected": "gateway-east",
+        "predicted": "ambiguous"
+      },
+      {
+        "query": "gatway-east",
+        "expected": "gateway-east",
+        "predicted": "ambiguous"
+      },
+      {
+        "query": "gateway",
+        "expected": "ambiguous",
+        "predicted": "ambiguous"
+      },
+      {
+        "query": "satellite",
+        "expected": "unknown",
+        "predicted": "unknown"
+      },
+      {
+        "query": "cache-primary",
+        "expected": "cache-primary",
+        "predicted": "cache-primary"
+      },
+      {
+        "query": "billing-prod",
+        "expected": "billing-prod",
+        "predicted": "billing-prod"
+      },
+      {
+        "query": "queue",
+        "expected": "queue-dev",
+        "predicted": "queue-dev"
+      }
+    ],
+    "accuracy": 0.7142857142857143,
+    "checks": [
+      "Ambiguous aliases abstain",
+      "Out-of-catalog input abstains"
+    ],
+    "scope": "Fictional IT asset catalog; lexical entity linking with explicit abstention. No learned model or production asset discovery."
+  },
+  "models_used": [],
+  "publication_note": "Local fixture checks passed, not independent validation or user approval. Review this run before publishing."
+}
